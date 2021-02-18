@@ -2,6 +2,9 @@ const path = require('path');
 
 module.exports = {
   entry: './client/index.js',
+  externals: {
+    moment: 'moment'
+  },
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'public'),
